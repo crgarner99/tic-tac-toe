@@ -71,6 +71,24 @@ function checkIfGameIsOver(playersTurn) {
   ) {
     hasPlayerWon = true;
   } else if (
+    squareOneElement.innerText === playersTurn &&
+    squareFourElement.innerText === playersTurn &&
+    squareSevenElement.innerText === playersTurn
+  ) {
+    hasPlayerWon = true;
+  } else if (
+    squareTwoElement.innerText === playersTurn &&
+    squareFiveElement.innerText === playersTurn &&
+    squareEightElement.innerText === playersTurn
+  ) {
+    hasPlayerWon = true;
+  } else if (
+    squareThreeElement.innerText === playersTurn &&
+    squareSixElement.innerText === playersTurn &&
+    squareNineElement.innerText === playersTurn
+  ) {
+    hasPlayerWon = true;
+  } else if (
     squareSevenElement.innerText === playersTurn &&
     squareEightElement.innerText === playersTurn &&
     squareNineElement.innerText === playersTurn
